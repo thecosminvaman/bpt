@@ -1,0 +1,63 @@
+{
+  "name": "biblioteca-pentru-toti",
+  "version": "1.0.0",
+  "description": "WordPress theme for the 'Biblioteca pentru Toți' literary archive - a comprehensive digital catalog of Romanian classic literature.",
+  "author": "Biblioteca pentru Toți",
+  "license": "GPL-2.0-or-later",
+  "keywords": [
+    "wordpress",
+    "theme",
+    "romanian-literature",
+    "archive",
+    "library",
+    "books"
+  ],
+  "homepage": "https://github.com/biblioteca-pentru-toti/theme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/biblioteca-pentru-toti/theme.git"
+  },
+  "main": "style.css",
+  "scripts": {
+    "dev": "npm run watch",
+    "watch": "concurrently \"npm run watch:scss\" \"npm run watch:js\"",
+    "watch:scss": "sass --watch assets/scss/style.scss:style.css --style=expanded",
+    "watch:js": "esbuild assets/js/main.js assets/js/filters.js assets/js/timeline.js assets/js/animations.js assets/js/customizer.js --bundle --outdir=assets/js/dist --watch",
+    "build": "npm run build:scss && npm run build:js",
+    "build:scss": "sass assets/scss/style.scss:style.css --style=compressed && npm run postcss",
+    "build:js": "esbuild assets/js/main.js assets/js/filters.js assets/js/timeline.js assets/js/animations.js assets/js/customizer.js --bundle --minify --outdir=assets/js/dist",
+    "postcss": "postcss style.css -o style.css --no-map",
+    "lint:scss": "stylelint 'assets/scss/**/*.scss'",
+    "lint:js": "eslint 'assets/js/**/*.js'",
+    "lint": "npm run lint:scss && npm run lint:js",
+    "format": "prettier --write 'assets/**/*.{scss,js}'",
+    "pot": "wp i18n make-pot . languages/biblioteca-pentru-toti.pot --domain=biblioteca-pentru-toti",
+    "zip": "bestzip biblioteca-pentru-toti.zip . -x 'node_modules/*' -x '.git/*' -x 'assets/scss/*' -x '*.map'",
+    "clean": "rimraf style.css.map assets/js/dist",
+    "prepare": "npm run build"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "bestzip": "^2.2.1",
+    "concurrently": "^8.2.2",
+    "esbuild": "^0.19.8",
+    "eslint": "^8.55.0",
+    "postcss": "^8.4.32",
+    "postcss-cli": "^11.0.0",
+    "prettier": "^3.1.1",
+    "rimraf": "^5.0.5",
+    "sass": "^1.69.5",
+    "stylelint": "^16.0.2",
+    "stylelint-config-standard-scss": "^12.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ],
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}

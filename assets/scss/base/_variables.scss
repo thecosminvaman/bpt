@@ -1,0 +1,501 @@
+/**
+ * Variables - Design Tokens
+ * 
+ * This file contains all design tokens used throughout the theme.
+ * Colors, typography, spacing, and other foundational values.
+ * 
+ * @package Biblioteca_Pentru_Toti
+ */
+
+// =============================================================================
+// COLOR PALETTE
+// =============================================================================
+
+// Brand Colors
+$color-primary: #1a365d !default;        // Deep blue - scholarly, trustworthy
+$color-secondary: #744210 !default;       // Warm brown - paper, leather
+$color-accent: #c53030 !default;          // Rich red - Romanian flag accent
+
+// Neutrals
+$color-white: #ffffff !default;
+$color-black: #1a1a1a !default;
+$color-gray-50: #fafafa !default;
+$color-gray-100: #f5f5f5 !default;
+$color-gray-200: #e5e5e5 !default;
+$color-gray-300: #d4d4d4 !default;
+$color-gray-400: #a3a3a3 !default;
+$color-gray-500: #737373 !default;
+$color-gray-600: #525252 !default;
+$color-gray-700: #404040 !default;
+$color-gray-800: #262626 !default;
+$color-gray-900: #171717 !default;
+
+// Paper/Parchment tones
+$color-paper: #fdf8f3 !default;
+$color-paper-dark: #f5ebe0 !default;
+$color-parchment: #f8f4e8 !default;
+$color-sepia: #704214 !default;
+
+// Semantic Colors
+$color-success: #059669 !default;
+$color-warning: #d97706 !default;
+$color-error: #dc2626 !default;
+$color-info: #2563eb !default;
+
+// Literary Epoch Colors (daltonism-friendly)
+$color-epoca-veche: #5c4827 !default;       // Antique gold-brown
+$color-epoca-pasoptista: #1e6f5c !default;  // Teal
+$color-epoca-moderna: #1a365d !default;     // Deep blue
+$color-epoca-interbelica: #7c2d12 !default; // Warm sienna
+$color-epoca-contemporana: #4338ca !default; // Indigo
+
+// Genre Colors
+$color-gen-roman: #0891b2 !default;
+$color-gen-poezie: #7c3aed !default;
+$color-gen-nuvela: #059669 !default;
+$color-gen-teatru: #dc2626 !default;
+$color-gen-eseu: #d97706 !default;
+
+// =============================================================================
+// TYPOGRAPHY
+// =============================================================================
+
+// Font Families
+$font-family-serif: 'Playfair Display', 'Georgia', 'Times New Roman', serif !default;
+$font-family-sans: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
+$font-family-mono: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace !default;
+
+$font-family-body: $font-family-sans !default;
+$font-family-heading: $font-family-serif !default;
+$font-family-display: $font-family-serif !default;
+
+// Font Sizes (using modular scale - ratio 1.25)
+$font-size-base: 1rem !default;          // 16px
+$font-size-xs: 0.75rem !default;         // 12px
+$font-size-sm: 0.875rem !default;        // 14px
+$font-size-md: 1rem !default;            // 16px
+$font-size-lg: 1.125rem !default;        // 18px
+$font-size-xl: 1.25rem !default;         // 20px
+$font-size-2xl: 1.5rem !default;         // 24px
+$font-size-3xl: 1.875rem !default;       // 30px
+$font-size-4xl: 2.25rem !default;        // 36px
+$font-size-5xl: 3rem !default;           // 48px
+$font-size-6xl: 3.75rem !default;        // 60px
+$font-size-7xl: 4.5rem !default;         // 72px
+
+// Font Weights
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-medium: 500 !default;
+$font-weight-semibold: 600 !default;
+$font-weight-bold: 700 !default;
+$font-weight-extrabold: 800 !default;
+
+// Line Heights
+$line-height-none: 1 !default;
+$line-height-tight: 1.25 !default;
+$line-height-snug: 1.375 !default;
+$line-height-normal: 1.5 !default;
+$line-height-relaxed: 1.625 !default;
+$line-height-loose: 2 !default;
+
+// Letter Spacing
+$letter-spacing-tighter: -0.05em !default;
+$letter-spacing-tight: -0.025em !default;
+$letter-spacing-normal: 0 !default;
+$letter-spacing-wide: 0.025em !default;
+$letter-spacing-wider: 0.05em !default;
+$letter-spacing-widest: 0.1em !default;
+
+// =============================================================================
+// SPACING
+// =============================================================================
+
+$spacing-0: 0 !default;
+$spacing-1: 0.25rem !default;    // 4px
+$spacing-2: 0.5rem !default;     // 8px
+$spacing-3: 0.75rem !default;    // 12px
+$spacing-4: 1rem !default;       // 16px
+$spacing-5: 1.25rem !default;    // 20px
+$spacing-6: 1.5rem !default;     // 24px
+$spacing-8: 2rem !default;       // 32px
+$spacing-10: 2.5rem !default;    // 40px
+$spacing-12: 3rem !default;      // 48px
+$spacing-16: 4rem !default;      // 64px
+$spacing-20: 5rem !default;      // 80px
+$spacing-24: 6rem !default;      // 96px
+$spacing-32: 8rem !default;      // 128px
+
+// =============================================================================
+// LAYOUT
+// =============================================================================
+
+// Container
+$container-max-width: 1280px !default;
+$container-padding: $spacing-4 !default;
+$container-padding-lg: $spacing-8 !default;
+
+// Grid
+$grid-columns: 12 !default;
+$grid-gutter: $spacing-6 !default;
+
+// Breakpoints
+$breakpoint-xs: 0 !default;
+$breakpoint-sm: 576px !default;
+$breakpoint-md: 768px !default;
+$breakpoint-lg: 992px !default;
+$breakpoint-xl: 1200px !default;
+$breakpoint-2xl: 1400px !default;
+
+// Breakpoints map for mixins
+$breakpoints: (
+    'xs': $breakpoint-xs,
+    'sm': $breakpoint-sm,
+    'md': $breakpoint-md,
+    'lg': $breakpoint-lg,
+    'xl': $breakpoint-xl,
+    '2xl': $breakpoint-2xl
+) !default;
+
+// =============================================================================
+// BORDERS & RADIUS
+// =============================================================================
+
+$border-width: 1px !default;
+$border-width-2: 2px !default;
+$border-width-4: 4px !default;
+
+$border-radius-none: 0 !default;
+$border-radius-sm: 0.125rem !default;    // 2px
+$border-radius: 0.25rem !default;        // 4px
+$border-radius-md: 0.375rem !default;    // 6px
+$border-radius-lg: 0.5rem !default;      // 8px
+$border-radius-xl: 0.75rem !default;     // 12px
+$border-radius-2xl: 1rem !default;       // 16px
+$border-radius-full: 9999px !default;
+
+// =============================================================================
+// SHADOWS
+// =============================================================================
+
+$shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !default;
+$shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1) !default;
+$shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1) !default;
+$shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1) !default;
+$shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1) !default;
+$shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !default;
+$shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05) !default;
+
+// Book-specific shadow
+$shadow-book: 0 4px 8px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.1) !default;
+$shadow-book-hover: 0 8px 16px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.1) !default;
+
+// =============================================================================
+// TRANSITIONS
+// =============================================================================
+
+$transition-fast: 150ms !default;
+$transition-normal: 200ms !default;
+$transition-slow: 300ms !default;
+$transition-slower: 500ms !default;
+
+$transition-timing: cubic-bezier(0.4, 0, 0.2, 1) !default;
+$transition-timing-in: cubic-bezier(0.4, 0, 1, 1) !default;
+$transition-timing-out: cubic-bezier(0, 0, 0.2, 1) !default;
+$transition-timing-in-out: cubic-bezier(0.4, 0, 0.2, 1) !default;
+
+// Common transitions
+$transition-base: all $transition-normal $transition-timing !default;
+$transition-color: color $transition-fast $transition-timing !default;
+$transition-opacity: opacity $transition-normal $transition-timing !default;
+$transition-transform: transform $transition-normal $transition-timing !default;
+$transition-shadow: box-shadow $transition-normal $transition-timing !default;
+
+// =============================================================================
+// Z-INDEX
+// =============================================================================
+
+$z-index-dropdown: 1000 !default;
+$z-index-sticky: 1020 !default;
+$z-index-fixed: 1030 !default;
+$z-index-modal-backdrop: 1040 !default;
+$z-index-modal: 1050 !default;
+$z-index-popover: 1060 !default;
+$z-index-tooltip: 1070 !default;
+
+// =============================================================================
+// COMPONENT SPECIFIC
+// =============================================================================
+
+// Header
+$header-height: 80px !default;
+$header-height-mobile: 60px !default;
+$header-bg: $color-white !default;
+$header-border: $color-gray-200 !default;
+
+// Footer
+$footer-bg: $color-gray-900 !default;
+$footer-text: $color-gray-300 !default;
+
+// Cards
+$card-bg: $color-white !default;
+$card-border: $color-gray-200 !default;
+$card-radius: $border-radius-lg !default;
+$card-padding: $spacing-4 !default;
+
+// Book Cards
+$book-card-width: 220px !default;
+$book-card-cover-ratio: 1.5 !default;  // Height = width * 1.5
+
+// Buttons
+$btn-padding-x: $spacing-4 !default;
+$btn-padding-y: $spacing-2 !default;
+$btn-radius: $border-radius !default;
+
+// Forms
+$input-padding-x: $spacing-4 !default;
+$input-padding-y: $spacing-3 !default;
+$input-border-color: $color-gray-300 !default;
+$input-focus-border-color: $color-primary !default;
+$input-radius: $border-radius !default;
+
+// Timeline
+$timeline-line-width: 3px !default;
+$timeline-dot-size: 16px !default;
+$timeline-dot-size-lg: 24px !default;
+$timeline-color: $color-primary !default;
+
+// =============================================================================
+// CSS CUSTOM PROPERTIES (for runtime customization)
+// =============================================================================
+
+:root {
+    // Colors
+    --color-primary: #{$color-primary};
+    --color-secondary: #{$color-secondary};
+    --color-accent: #{$color-accent};
+    --color-background: #{$color-paper};
+    --color-text: #{$color-gray-800};
+    --color-text-muted: #{$color-gray-500};
+    --color-link: #{$color-primary};
+    --color-link-hover: #{darken($color-primary, 10%)};
+    --color-border: #{$color-gray-200};
+    
+    // Epoca colors
+    --epoca-veche: #{$color-epoca-veche};
+    --epoca-pasoptista: #{$color-epoca-pasoptista};
+    --epoca-moderna: #{$color-epoca-moderna};
+    --epoca-interbelica: #{$color-epoca-interbelica};
+    --epoca-contemporana: #{$color-epoca-contemporana};
+    
+    // Typography
+    --font-body: #{$font-family-body};
+    --font-heading: #{$font-family-heading};
+    --font-size-base: #{$font-size-base};
+    --line-height-base: #{$line-height-normal};
+    
+    // Layout
+    --container-width: #{$container-max-width};
+    --grid-gap: #{$grid-gutter};
+    --header-height: #{$header-height};
+    
+    // Transitions
+    --transition-fast: #{$transition-fast};
+    --transition-normal: #{$transition-normal};
+    
+    // Shadows
+    --shadow-card: #{$shadow-md};
+    --shadow-book: #{$shadow-book};
+    
+    // Timeline
+    --timeline-color: #{$timeline-color};
+    --timeline-line-width: #{$timeline-line-width};
+    --timeline-dot-size: #{$timeline-dot-size};
+}
+
+// =============================================================================
+// MIXINS
+// =============================================================================
+
+// Media query mixin
+@mixin media-up($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        @media (min-width: map-get($breakpoints, $breakpoint)) {
+            @content;
+        }
+    } @else {
+        @media (min-width: $breakpoint) {
+            @content;
+        }
+    }
+}
+
+@mixin media-down($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        @media (max-width: map-get($breakpoints, $breakpoint) - 1px) {
+            @content;
+        }
+    } @else {
+        @media (max-width: $breakpoint - 1px) {
+            @content;
+        }
+    }
+}
+
+@mixin media-between($lower, $upper) {
+    @media (min-width: map-get($breakpoints, $lower)) and (max-width: map-get($breakpoints, $upper) - 1px) {
+        @content;
+    }
+}
+
+// Typography mixins
+@mixin heading-style {
+    font-family: var(--font-heading);
+    font-weight: $font-weight-bold;
+    line-height: $line-height-tight;
+    letter-spacing: $letter-spacing-tight;
+    color: var(--color-text);
+}
+
+@mixin body-text {
+    font-family: var(--font-body);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    color: var(--color-text);
+}
+
+// Truncate text
+@mixin truncate($lines: 1) {
+    @if $lines == 1 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    } @else {
+        display: -webkit-box;
+        -webkit-line-clamp: $lines;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}
+
+// Focus ring
+@mixin focus-ring {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+// Visually hidden (for accessibility)
+@mixin visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+// Reset list
+@mixin reset-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+// Aspect ratio
+@mixin aspect-ratio($width, $height) {
+    aspect-ratio: #{$width} / #{$height};
+    
+    @supports not (aspect-ratio: 1) {
+        &::before {
+            content: '';
+            float: left;
+            padding-top: calc(#{$height} / #{$width} * 100%);
+        }
+        
+        &::after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+    }
+}
+
+// Card shadow
+@mixin card-shadow {
+    box-shadow: var(--shadow-card);
+    transition: box-shadow $transition-normal $transition-timing;
+    
+    &:hover {
+        box-shadow: $shadow-lg;
+    }
+}
+
+// Book cover shadow
+@mixin book-shadow {
+    box-shadow: var(--shadow-book);
+    transition: box-shadow $transition-normal $transition-timing,
+                transform $transition-normal $transition-timing;
+    
+    &:hover {
+        box-shadow: $shadow-book-hover;
+        transform: translateY(-4px);
+    }
+}
+
+// Button base
+@mixin btn-base {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: $spacing-2;
+    padding: $btn-padding-y $btn-padding-x;
+    font-family: var(--font-body);
+    font-size: $font-size-sm;
+    font-weight: $font-weight-medium;
+    line-height: 1;
+    text-decoration: none;
+    border-radius: $btn-radius;
+    cursor: pointer;
+    transition: $transition-base;
+    
+    &:focus-visible {
+        @include focus-ring;
+    }
+    
+    &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+}
+
+// Container
+@mixin container {
+    width: 100%;
+    max-width: var(--container-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $container-padding;
+    padding-right: $container-padding;
+    
+    @include media-up(lg) {
+        padding-left: $container-padding-lg;
+        padding-right: $container-padding-lg;
+    }
+}
+
+// Grid
+@mixin grid($columns: 1, $gap: $grid-gutter) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: $gap;
+}
+
+// Responsive grid
+@mixin responsive-grid($min-width: 280px, $gap: $grid-gutter) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax($min-width, 1fr));
+    gap: $gap;
+}

@@ -1,0 +1,123 @@
+{
+    "key": "group_carte_details",
+    "title": "Detalii Carte",
+    "fields": [
+        {
+            "key": "field_nr_bpt",
+            "label": "Număr BPT",
+            "name": "nr_bpt",
+            "type": "number",
+            "instructions": "Numărul volumului în colecția Biblioteca pentru Toți",
+            "required": 1,
+            "min": 1,
+            "max": 9999
+        },
+        {
+            "key": "field_an_scriere",
+            "label": "An scriere",
+            "name": "an_scriere",
+            "type": "number",
+            "instructions": "Anul în care a fost scrisă opera",
+            "required": 0,
+            "min": -3000,
+            "max": 2030
+        },
+        {
+            "key": "field_an_publicare_bpt",
+            "label": "An publicare BPT",
+            "name": "an_publicare_bpt",
+            "type": "number",
+            "instructions": "Anul publicării în colecția BPT",
+            "required": 0,
+            "min": 1895,
+            "max": 2030
+        },
+        {
+            "key": "field_traducator",
+            "label": "Traducător",
+            "name": "traducator",
+            "type": "text",
+            "instructions": "Numele traducătorului/traducătorilor (pentru opere traduse)",
+            "required": 0
+        },
+        {
+            "key": "field_citat_reprezentativ",
+            "label": "Citat reprezentativ",
+            "name": "citat_reprezentativ",
+            "type": "textarea",
+            "instructions": "Un citat memorabil din operă",
+            "required": 0,
+            "rows": 4
+        },
+        {
+            "key": "field_context_istoric",
+            "label": "Context istoric",
+            "name": "context_istoric",
+            "type": "wysiwyg",
+            "instructions": "Contextul istoric și literar al operei",
+            "required": 0,
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_in_domeniu_public",
+            "label": "În domeniul public",
+            "name": "in_domeniu_public",
+            "type": "true_false",
+            "instructions": "Opera se află în domeniul public?",
+            "required": 0,
+            "default_value": 1,
+            "ui": 1
+        },
+        {
+            "key": "field_fisier_download",
+            "label": "Fișier download",
+            "name": "fisier_download",
+            "type": "file",
+            "instructions": "Fișier PDF pentru descărcare (doar pentru opere în domeniul public)",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_in_domeniu_public",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "return_format": "array",
+            "library": "all",
+            "mime_types": "pdf"
+        },
+        {
+            "key": "field_carte_featured",
+            "label": "Carte recomandată",
+            "name": "carte_featured",
+            "type": "true_false",
+            "instructions": "Afișează această carte în secțiunea de recomandări",
+            "required": 0,
+            "default_value": 0,
+            "ui": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "carte"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Câmpuri personalizate pentru cărțile din colecția BPT",
+    "show_in_rest": 1,
+    "modified": 1704456000
+}

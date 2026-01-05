@@ -1,0 +1,597 @@
+/**
+ * Admin Styles - Biblioteca pentru Toți
+ * Stiluri pentru panoul de administrare WordPress
+ */
+
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+
+:root {
+    --bpt-primary: #1e3a5f;
+    --bpt-secondary: #8b4513;
+    --bpt-accent: #c9a227;
+    --bpt-success: #10b981;
+    --bpt-warning: #f59e0b;
+    --bpt-error: #ef4444;
+}
+
+/* ==========================================================================
+   Admin Menu Customization
+   ========================================================================== */
+
+/* Highlight BPT menu items */
+#adminmenu .menu-icon-carte .wp-menu-image::before,
+#adminmenu .menu-icon-eveniment .wp-menu-image::before {
+    color: var(--bpt-accent) !important;
+}
+
+#adminmenu li.menu-icon-carte:hover .wp-menu-image::before,
+#adminmenu li.menu-icon-carte.wp-has-current-submenu .wp-menu-image::before,
+#adminmenu li.menu-icon-eveniment:hover .wp-menu-image::before,
+#adminmenu li.menu-icon-eveniment.wp-has-current-submenu .wp-menu-image::before {
+    color: #fff !important;
+}
+
+/* ==========================================================================
+   Post Type List Tables
+   ========================================================================== */
+
+/* Carte columns */
+.column-nr_bpt {
+    width: 80px;
+}
+
+.column-epoca,
+.column-gen,
+.column-autor {
+    width: 120px;
+}
+
+.column-thumbnail {
+    width: 60px;
+}
+
+.column-thumbnail img {
+    width: 50px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* BPT number badge in list */
+.bpt-number-badge {
+    display: inline-block;
+    background: var(--bpt-secondary);
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Taxonomy term colors in list */
+.taxonomy-term-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: 500;
+    margin: 1px;
+}
+
+.taxonomy-term-badge.epoca {
+    background: var(--bpt-primary);
+    color: #fff;
+}
+
+.taxonomy-term-badge.gen {
+    background: #6b7280;
+    color: #fff;
+}
+
+/* Status indicators */
+.status-featured {
+    color: var(--bpt-accent);
+}
+
+.status-featured::before {
+    content: "★ ";
+}
+
+/* ==========================================================================
+   Edit Screen Enhancements
+   ========================================================================== */
+
+/* Post type header */
+.post-type-carte #titlewrap,
+.post-type-eveniment #titlewrap {
+    border-left: 4px solid var(--bpt-secondary);
+    padding-left: 12px;
+}
+
+/* ACF field groups styling */
+.acf-field-group .acf-label {
+    font-weight: 600;
+    color: var(--bpt-primary);
+}
+
+.acf-field-group .acf-input {
+    margin-top: 8px;
+}
+
+/* Number field (BPT number) */
+.acf-field[data-name="nr_bpt"] input {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--bpt-secondary);
+    max-width: 150px;
+    text-align: center;
+}
+
+/* Year fields */
+.acf-field[data-name="an_scriere"] input,
+.acf-field[data-name="an_publicare_bpt"] input {
+    max-width: 120px;
+}
+
+/* Quote field (citat_reprezentativ) */
+.acf-field[data-name="citat_reprezentativ"] textarea {
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.6;
+    min-height: 120px;
+}
+
+/* Context istoric field */
+.acf-field[data-name="context_istoric"] .acf-editor-wrap {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Featured checkbox */
+.acf-field[data-name="carte_featured"] {
+    background: #fffbeb;
+    border: 1px solid var(--bpt-accent);
+    padding: 12px;
+    border-radius: 4px;
+}
+
+/* ==========================================================================
+   Taxonomy Term Edit
+   ========================================================================== */
+
+/* Color picker for taxonomies */
+.term-culoare-wrap .wp-picker-container {
+    display: inline-block;
+}
+
+.term-culoare-wrap .wp-picker-container .wp-color-result {
+    margin-right: 10px;
+}
+
+/* Epoca period display */
+.term-perioada-wrap .acf-input {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.term-perioada-wrap input {
+    width: 80px;
+}
+
+.term-perioada-wrap .separator {
+    font-weight: bold;
+}
+
+/* Author photo preview */
+.term-fotografie-wrap .acf-image-uploader .image-wrap {
+    max-width: 200px;
+}
+
+.term-fotografie-wrap .acf-image-uploader .image-wrap img {
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Author dates */
+.term-an_nastere-wrap,
+.term-an_deces-wrap {
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+}
+
+/* ==========================================================================
+   Dashboard Widgets
+   ========================================================================== */
+
+/* BPT Stats Widget */
+#bpt_stats_widget .inside {
+    padding: 0;
+}
+
+.bpt-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: #ddd;
+}
+
+.bpt-stat-item {
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.bpt-stat-number {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--bpt-secondary);
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.bpt-stat-label {
+    font-size: 12px;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Recent Activity Widget */
+#bpt_recent_widget .bpt-recent-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#bpt_recent_widget .bpt-recent-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    border-bottom: 1px solid #eee;
+}
+
+#bpt_recent_widget .bpt-recent-item:last-child {
+    border-bottom: none;
+}
+
+#bpt_recent_widget .bpt-recent-thumb {
+    width: 40px;
+    height: 56px;
+    margin-right: 12px;
+    border-radius: 2px;
+    object-fit: cover;
+}
+
+#bpt_recent_widget .bpt-recent-info {
+    flex: 1;
+}
+
+#bpt_recent_widget .bpt-recent-title {
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+#bpt_recent_widget .bpt-recent-meta {
+    font-size: 11px;
+    color: #666;
+}
+
+/* ==========================================================================
+   Media Library Enhancements
+   ========================================================================== */
+
+/* Book cover attachment */
+.attachment-details[data-type="image"] .thumbnail-image img[src*="carte"],
+.attachment-details[data-type="image"] .thumbnail-image img[src*="coperta"] {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* ==========================================================================
+   Quick Edit Enhancements
+   ========================================================================== */
+
+.inline-edit-carte .inline-edit-col-left,
+.inline-edit-carte .inline-edit-col-center,
+.inline-edit-carte .inline-edit-col-right {
+    width: 33%;
+}
+
+.inline-edit-carte label.nr-bpt-label input {
+    width: 80px;
+}
+
+/* ==========================================================================
+   Metabox Styling
+   ========================================================================== */
+
+/* Collapse metabox headers for BPT */
+#carte_details .hndle,
+#eveniment_details .hndle,
+#acf-group_carte_details .hndle,
+#acf-group_eveniment_details .hndle {
+    background: linear-gradient(to right, var(--bpt-primary), var(--bpt-primary-light, #2c4a6e));
+    color: #fff;
+    border: none;
+}
+
+#carte_details .hndle span,
+#eveniment_details .hndle span,
+#acf-group_carte_details .hndle span,
+#acf-group_eveniment_details .hndle span {
+    color: #fff;
+}
+
+#carte_details .handlediv,
+#eveniment_details .handlediv,
+#acf-group_carte_details .handlediv,
+#acf-group_eveniment_details .handlediv {
+    color: #fff;
+}
+
+/* Postbox inside padding */
+#carte_details .inside,
+#eveniment_details .inside,
+#acf-group_carte_details .inside,
+#acf-group_eveniment_details .inside {
+    padding: 12px;
+    background: #f9f9f9;
+}
+
+/* ==========================================================================
+   Settings Page
+   ========================================================================== */
+
+.bpt-settings-wrap {
+    max-width: 800px;
+}
+
+.bpt-settings-wrap .form-table th {
+    width: 200px;
+    padding: 20px 10px 20px 0;
+}
+
+.bpt-settings-section {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.bpt-settings-section h2 {
+    margin: 0;
+    padding: 15px 20px;
+    background: #f9f9f9;
+    border-bottom: 1px solid #ccd0d4;
+    font-size: 14px;
+}
+
+.bpt-settings-section .inside {
+    padding: 20px;
+}
+
+/* ==========================================================================
+   Import/Export Page
+   ========================================================================== */
+
+.bpt-import-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 1000px;
+}
+
+.bpt-import-box,
+.bpt-export-box {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.bpt-import-box h3,
+.bpt-export-box h3 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.bpt-file-upload {
+    border: 2px dashed #ccd0d4;
+    border-radius: 4px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.bpt-file-upload:hover,
+.bpt-file-upload.dragover {
+    border-color: var(--bpt-secondary);
+    background: #fff8f0;
+}
+
+.bpt-file-upload input[type="file"] {
+    display: none;
+}
+
+.bpt-file-upload label {
+    cursor: pointer;
+    color: var(--bpt-secondary);
+    font-weight: 600;
+}
+
+/* ==========================================================================
+   Notices & Messages
+   ========================================================================== */
+
+.notice-bpt {
+    border-left-color: var(--bpt-secondary);
+}
+
+.notice-bpt-success {
+    border-left-color: var(--bpt-success);
+    background: #ecfdf5;
+}
+
+.notice-bpt-warning {
+    border-left-color: var(--bpt-warning);
+    background: #fffbeb;
+}
+
+.notice-bpt-error {
+    border-left-color: var(--bpt-error);
+    background: #fef2f2;
+}
+
+/* ==========================================================================
+   Bulk Actions
+   ========================================================================== */
+
+.tablenav .bpt-bulk-actions {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.tablenav .bpt-bulk-actions select {
+    vertical-align: middle;
+}
+
+/* ==========================================================================
+   Help Tabs
+   ========================================================================== */
+
+.bpt-help-tab {
+    max-width: 700px;
+}
+
+.bpt-help-tab h3 {
+    color: var(--bpt-primary);
+    margin-top: 1.5em;
+}
+
+.bpt-help-tab h3:first-child {
+    margin-top: 0;
+}
+
+.bpt-help-tab code {
+    background: #f0f0f0;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+.bpt-help-tab .example {
+    background: #f9f9f9;
+    border-left: 3px solid var(--bpt-secondary);
+    padding: 12px 15px;
+    margin: 1em 0;
+}
+
+/* ==========================================================================
+   Loading States
+   ========================================================================== */
+
+.bpt-loading {
+    position: relative;
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+.bpt-loading::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin: -12px 0 0 -12px;
+    border: 3px solid #ddd;
+    border-top-color: var(--bpt-secondary);
+    border-radius: 50%;
+    animation: bpt-spin 0.8s linear infinite;
+}
+
+@keyframes bpt-spin {
+    to { transform: rotate(360deg); }
+}
+
+/* ==========================================================================
+   Print Styles
+   ========================================================================== */
+
+@media print {
+    .bpt-number-badge,
+    .taxonomy-term-badge {
+        border: 1px solid #000;
+        color: #000 !important;
+        background: transparent !important;
+    }
+}
+
+/* ==========================================================================
+   RTL Support
+   ========================================================================== */
+
+.rtl .post-type-carte #titlewrap,
+.rtl .post-type-eveniment #titlewrap {
+    border-left: none;
+    border-right: 4px solid var(--bpt-secondary);
+    padding-left: 0;
+    padding-right: 12px;
+}
+
+.rtl .bpt-settings-wrap .form-table th {
+    padding: 20px 0 20px 10px;
+}
+
+.rtl .notice-bpt,
+.rtl .notice-bpt-success,
+.rtl .notice-bpt-warning,
+.rtl .notice-bpt-error {
+    border-left: none;
+    border-right-width: 4px;
+    border-right-style: solid;
+}
+
+/* ==========================================================================
+   Responsive Admin
+   ========================================================================== */
+
+@media screen and (max-width: 782px) {
+    .bpt-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .bpt-import-wrap {
+        grid-template-columns: 1fr;
+    }
+    
+    .column-thumbnail {
+        display: none;
+    }
+    
+    .column-nr_bpt,
+    .column-epoca,
+    .column-gen,
+    .column-autor {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .bpt-stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .bpt-stat-item {
+        padding: 15px;
+    }
+    
+    .bpt-stat-number {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,998 @@
+# Copyright (C) 2026 Biblioteca pentru Toți
+# This file is distributed under the GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Biblioteca pentru Toți 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-05 12:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: WP-CLI\n"
+"X-Domain: biblioteca-pentru-toti\n"
+
+#: style.css
+msgid "Biblioteca pentru Toți"
+msgstr ""
+
+#: style.css
+msgid "Temă WordPress pentru arhiva digitală a colecției „Biblioteca pentru Toți""
+msgstr ""
+
+#. Navigation
+#: header.php
+msgid "Primary Menu"
+msgstr ""
+
+#: header.php
+msgid "Skip to content"
+msgstr ""
+
+#: header.php
+msgid "Search"
+msgstr ""
+
+#: header.php
+msgid "Search books, authors..."
+msgstr ""
+
+#: header.php
+msgid "Close search"
+msgstr ""
+
+#: header.php
+msgid "Open menu"
+msgstr ""
+
+#: header.php
+msgid "Close menu"
+msgstr ""
+
+#. Footer
+#: footer.php
+msgid "Footer Menu"
+msgstr ""
+
+#: footer.php
+msgid "Social Links Menu"
+msgstr ""
+
+#: footer.php
+msgid "All rights reserved."
+msgstr ""
+
+#: footer.php
+msgid "Back to top"
+msgstr ""
+
+#. Archive pages
+#: archive-carte.php
+msgid "Books"
+msgstr ""
+
+#: archive-carte.php
+msgid "Browse our complete collection"
+msgstr ""
+
+#: archive-carte.php
+msgid "All Books"
+msgstr ""
+
+#: archive-carte.php
+msgid "%d books"
+msgstr ""
+
+#: archive-carte.php
+msgid "1 book"
+msgstr ""
+
+#: archive-carte.php
+msgid "No books found"
+msgstr ""
+
+#: archive-carte.php
+msgid "No books match your criteria. Try adjusting your filters."
+msgstr ""
+
+#: archive-carte.php
+msgid "Clear filters"
+msgstr ""
+
+#. Single carte
+#: single-carte.php
+msgid "BPT Nr."
+msgstr ""
+
+#: single-carte.php
+msgid "Year written"
+msgstr ""
+
+#: single-carte.php
+msgid "BPT publication year"
+msgstr ""
+
+#: single-carte.php
+msgid "Translator"
+msgstr ""
+
+#: single-carte.php
+msgid "Original language"
+msgstr ""
+
+#: single-carte.php
+msgid "Genre"
+msgstr ""
+
+#: single-carte.php
+msgid "Literary epoch"
+msgstr ""
+
+#: single-carte.php
+msgid "About the author"
+msgstr ""
+
+#: single-carte.php
+msgid "Representative quote"
+msgstr ""
+
+#: single-carte.php
+msgid "Historical context"
+msgstr ""
+
+#: single-carte.php
+msgid "Download"
+msgstr ""
+
+#: single-carte.php
+msgid "Download book (PDF)"
+msgstr ""
+
+#: single-carte.php
+msgid "Public domain"
+msgstr ""
+
+#: single-carte.php
+msgid "This work is in the public domain."
+msgstr ""
+
+#: single-carte.php
+msgid "Other books by this author"
+msgstr ""
+
+#: single-carte.php
+msgid "Books from the same epoch"
+msgstr ""
+
+#: single-carte.php
+msgid "View all"
+msgstr ""
+
+#. Single eveniment
+#: single-eveniment.php
+msgid "Event"
+msgstr ""
+
+#: single-eveniment.php
+msgid "Event date"
+msgstr ""
+
+#: single-eveniment.php
+msgid "Event type"
+msgstr ""
+
+#: single-eveniment.php
+msgid "Associated books"
+msgstr ""
+
+#: single-eveniment.php
+msgid "Image gallery"
+msgstr ""
+
+#: single-eveniment.php
+msgid "Other events"
+msgstr ""
+
+#. Taxonomy autor
+#: taxonomy-autor.php
+msgid "Author"
+msgstr ""
+
+#: taxonomy-autor.php
+msgid "Biography"
+msgstr ""
+
+#: taxonomy-autor.php
+msgid "Works in collection"
+msgstr ""
+
+#: taxonomy-autor.php
+msgid "Born"
+msgstr ""
+
+#: taxonomy-autor.php
+msgid "Died"
+msgstr ""
+
+#: taxonomy-autor.php
+msgid "Country"
+msgstr ""
+
+#: taxonomy-autor.php
+msgid "No works available"
+msgstr ""
+
+#: taxonomy-autor.php
+msgid "Other authors from %s"
+msgstr ""
+
+#. Taxonomy epoca
+#: taxonomy-epoca.php
+msgid "Literary epoch"
+msgstr ""
+
+#: taxonomy-epoca.php
+msgid "Period"
+msgstr ""
+
+#: taxonomy-epoca.php
+msgid "Characteristics"
+msgstr ""
+
+#: taxonomy-epoca.php
+msgid "Books in this epoch"
+msgstr ""
+
+#: taxonomy-epoca.php
+msgid "Previous epoch"
+msgstr ""
+
+#: taxonomy-epoca.php
+msgid "Next epoch"
+msgstr ""
+
+#: taxonomy-epoca.php
+msgid "Navigate epochs"
+msgstr ""
+
+#. Filters
+#: template-parts/filters-carti.php
+msgid "Filter books"
+msgstr ""
+
+#: template-parts/filters-carti.php
+msgid "Search by title..."
+msgstr ""
+
+#: template-parts/filters-carti.php
+msgid "All epochs"
+msgstr ""
+
+#: template-parts/filters-carti.php
+msgid "All genres"
+msgstr ""
+
+#: template-parts/filters-carti.php
+msgid "All languages"
+msgstr ""
+
+#: template-parts/filters-carti.php
+msgid "Search author..."
+msgstr ""
+
+#: template-parts/filters-carti.php
+msgid "Advanced filters"
+msgstr ""
+
+#: template-parts/filters-carti.php
+msgid "Year range"
+msgstr ""
+
+#: template-parts/filters-carti.php
+msgid "From"
+msgstr ""
+
+#: template-parts/filters-carti.php
+msgid "To"
+msgstr ""
+
+#: template-parts/filters-carti.php
+msgid "Apply filters"
+msgstr ""
+
+#: template-parts/filters-carti.php
+msgid "Reset"
+msgstr ""
+
+#: template-parts/filters-carti.php
+msgid "Active filters:"
+msgstr ""
+
+#: template-parts/filters-carti.php
+msgid "Remove filter"
+msgstr ""
+
+#. Cards
+#: template-parts/card-carte.php
+msgid "View details"
+msgstr ""
+
+#: template-parts/card-carte.php
+msgid "Featured"
+msgstr ""
+
+#: template-parts/card-articol.php
+msgid "Read article"
+msgstr ""
+
+#: template-parts/card-articol.php
+msgid "%d min read"
+msgstr ""
+
+#. Hero
+#: template-parts/hero.php
+msgid "Explore the collection"
+msgstr ""
+
+#: template-parts/hero.php
+msgid "View timeline"
+msgstr ""
+
+#. Stats
+#: template-parts/stats-counter.php
+msgid "Books"
+msgstr ""
+
+#: template-parts/stats-counter.php
+msgid "Authors"
+msgstr ""
+
+#: template-parts/stats-counter.php
+msgid "Years of history"
+msgstr ""
+
+#: template-parts/stats-counter.php
+msgid "Genres"
+msgstr ""
+
+#: template-parts/stats-counter.php
+msgid "Languages"
+msgstr ""
+
+#: template-parts/stats-counter.php
+msgid "Literary epochs"
+msgstr ""
+
+#. Timeline
+#: template-parts/timeline-item.php
+msgid "Year"
+msgstr ""
+
+#: template-parts/timeline-item.php
+msgid "High importance"
+msgstr ""
+
+#: template-parts/timeline-item.php
+msgid "Medium importance"
+msgstr ""
+
+#: template-parts/timeline-item.php
+msgid "Normal importance"
+msgstr ""
+
+#: templates/template-cronologie.php
+msgid "Timeline"
+msgstr ""
+
+#: templates/template-cronologie.php
+msgid "Explore the history of Romanian literature"
+msgstr ""
+
+#: templates/template-cronologie.php
+msgid "Filter by decade"
+msgstr ""
+
+#: templates/template-cronologie.php
+msgid "All decades"
+msgstr ""
+
+#: templates/template-cronologie.php
+msgid "Filter by type"
+msgstr ""
+
+#: templates/template-cronologie.php
+msgid "All types"
+msgstr ""
+
+#: templates/template-cronologie.php
+msgid "Go to year"
+msgstr ""
+
+#: templates/template-cronologie.php
+msgid "No events found"
+msgstr ""
+
+#: templates/template-cronologie.php
+msgid "Scroll to top"
+msgstr ""
+
+#. Homepage
+#: templates/template-homepage.php
+msgid "Featured books"
+msgstr ""
+
+#: templates/template-homepage.php
+msgid "Explore by epoch"
+msgstr ""
+
+#: templates/template-homepage.php
+msgid "About the collection"
+msgstr ""
+
+#: templates/template-homepage.php
+msgid "Recent events"
+msgstr ""
+
+#: templates/template-homepage.php
+msgid "Subscribe to newsletter"
+msgstr ""
+
+#: templates/template-homepage.php
+msgid "Your email address"
+msgstr ""
+
+#: templates/template-homepage.php
+msgid "Subscribe"
+msgstr ""
+
+#. Epoch grid
+#: template-parts/epoch-grid.php
+msgid "View books from %s"
+msgstr ""
+
+#. Search
+#: search.php
+msgid "Search results for: %s"
+msgstr ""
+
+#: search.php
+msgid "No results found"
+msgstr ""
+
+#: search.php
+msgid "Try searching with different keywords."
+msgstr ""
+
+#: search.php
+msgid "Search again"
+msgstr ""
+
+#. 404
+#: 404.php
+msgid "Page not found"
+msgstr ""
+
+#: 404.php
+msgid "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable."
+msgstr ""
+
+#: 404.php
+msgid "Go to homepage"
+msgstr ""
+
+#: 404.php
+msgid "Search site"
+msgstr ""
+
+#. Pagination
+#: inc/template-functions.php
+msgid "Previous"
+msgstr ""
+
+#: inc/template-functions.php
+msgid "Next"
+msgstr ""
+
+#: inc/template-functions.php
+msgid "Page %d"
+msgstr ""
+
+#: inc/template-functions.php
+msgid "Load more"
+msgstr ""
+
+#: inc/template-functions.php
+msgid "Loading..."
+msgstr ""
+
+#. Breadcrumbs
+#: inc/template-functions.php
+msgid "Home"
+msgstr ""
+
+#: inc/template-functions.php
+msgid "You are here:"
+msgstr ""
+
+#. View toggle
+#: inc/template-functions.php
+msgid "Grid view"
+msgstr ""
+
+#: inc/template-functions.php
+msgid "List view"
+msgstr ""
+
+#. Sort options
+#: inc/template-functions.php
+msgid "Sort by"
+msgstr ""
+
+#: inc/template-functions.php
+msgid "Title A-Z"
+msgstr ""
+
+#: inc/template-functions.php
+msgid "Title Z-A"
+msgstr ""
+
+#: inc/template-functions.php
+msgid "BPT Number"
+msgstr ""
+
+#: inc/template-functions.php
+msgid "Year written"
+msgstr ""
+
+#: inc/template-functions.php
+msgid "Publication year"
+msgstr ""
+
+#: inc/template-functions.php
+msgid "Newest first"
+msgstr ""
+
+#: inc/template-functions.php
+msgid "Oldest first"
+msgstr ""
+
+#. Custom Post Types
+#: inc/custom-post-types.php
+msgid "Book"
+msgstr ""
+
+#: inc/custom-post-types.php
+msgid "Add new book"
+msgstr ""
+
+#: inc/custom-post-types.php
+msgid "Edit book"
+msgstr ""
+
+#: inc/custom-post-types.php
+msgid "New book"
+msgstr ""
+
+#: inc/custom-post-types.php
+msgid "View book"
+msgstr ""
+
+#: inc/custom-post-types.php
+msgid "Search books"
+msgstr ""
+
+#: inc/custom-post-types.php
+msgid "No books found"
+msgstr ""
+
+#: inc/custom-post-types.php
+msgid "No books found in Trash"
+msgstr ""
+
+#: inc/custom-post-types.php
+msgid "Events"
+msgstr ""
+
+#: inc/custom-post-types.php
+msgid "Add new event"
+msgstr ""
+
+#: inc/custom-post-types.php
+msgid "Edit event"
+msgstr ""
+
+#: inc/custom-post-types.php
+msgid "New event"
+msgstr ""
+
+#: inc/custom-post-types.php
+msgid "View event"
+msgstr ""
+
+#: inc/custom-post-types.php
+msgid "Search events"
+msgstr ""
+
+#: inc/custom-post-types.php
+msgid "No events found"
+msgstr ""
+
+#: inc/custom-post-types.php
+msgid "No events found in Trash"
+msgstr ""
+
+#. Taxonomies
+#: inc/taxonomies.php
+msgid "Epochs"
+msgstr ""
+
+#: inc/taxonomies.php
+msgid "Epoch"
+msgstr ""
+
+#: inc/taxonomies.php
+msgid "Add new epoch"
+msgstr ""
+
+#: inc/taxonomies.php
+msgid "Edit epoch"
+msgstr ""
+
+#: inc/taxonomies.php
+msgid "Search epochs"
+msgstr ""
+
+#: inc/taxonomies.php
+msgid "Genres"
+msgstr ""
+
+#: inc/taxonomies.php
+msgid "Add new genre"
+msgstr ""
+
+#: inc/taxonomies.php
+msgid "Edit genre"
+msgstr ""
+
+#: inc/taxonomies.php
+msgid "Search genres"
+msgstr ""
+
+#: inc/taxonomies.php
+msgid "Languages"
+msgstr ""
+
+#: inc/taxonomies.php
+msgid "Language"
+msgstr ""
+
+#: inc/taxonomies.php
+msgid "Add new language"
+msgstr ""
+
+#: inc/taxonomies.php
+msgid "Edit language"
+msgstr ""
+
+#: inc/taxonomies.php
+msgid "Search languages"
+msgstr ""
+
+#: inc/taxonomies.php
+msgid "Authors"
+msgstr ""
+
+#: inc/taxonomies.php
+msgid "Add new author"
+msgstr ""
+
+#: inc/taxonomies.php
+msgid "Edit author"
+msgstr ""
+
+#: inc/taxonomies.php
+msgid "Search authors"
+msgstr ""
+
+#: inc/taxonomies.php
+msgid "Event types"
+msgstr ""
+
+#: inc/taxonomies.php
+msgid "Event type"
+msgstr ""
+
+#: inc/taxonomies.php
+msgid "Add new event type"
+msgstr ""
+
+#: inc/taxonomies.php
+msgid "Edit event type"
+msgstr ""
+
+#: inc/taxonomies.php
+msgid "Search event types"
+msgstr ""
+
+#. Customizer
+#: inc/customizer.php
+msgid "Hero Section"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Hero title"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Hero subtitle"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Hero background"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Primary button text"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Secondary button text"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Statistics Section"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Show statistics"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Timeline Section"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Timeline title"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Timeline description"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Footer Settings"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Copyright text"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Show social links"
+msgstr ""
+
+#. ACF Fields
+#: inc/acf-fields.php
+msgid "Book Details"
+msgstr ""
+
+#: inc/acf-fields.php
+msgid "BPT Number"
+msgstr ""
+
+#: inc/acf-fields.php
+msgid "The volume number in the BPT collection"
+msgstr ""
+
+#: inc/acf-fields.php
+msgid "Year Written"
+msgstr ""
+
+#: inc/acf-fields.php
+msgid "The year the work was originally written"
+msgstr ""
+
+#: inc/acf-fields.php
+msgid "BPT Publication Year"
+msgstr ""
+
+#: inc/acf-fields.php
+msgid "The year published in the BPT collection"
+msgstr ""
+
+#: inc/acf-fields.php
+msgid "Translator"
+msgstr ""
+
+#: inc/acf-fields.php
+msgid "The translator(s) for translated works"
+msgstr ""
+
+#: inc/acf-fields.php
+msgid "Representative Quote"
+msgstr ""
+
+#: inc/acf-fields.php
+msgid "A memorable quote from the book"
+msgstr ""
+
+#: inc/acf-fields.php
+msgid "Historical Context"
+msgstr ""
+
+#: inc/acf-fields.php
+msgid "Historical and literary context"
+msgstr ""
+
+#: inc/acf-fields.php
+msgid "Public Domain"
+msgstr ""
+
+#: inc/acf-fields.php
+msgid "Is this work in the public domain?"
+msgstr ""
+
+#: inc/acf-fields.php
+msgid "Download File"
+msgstr ""
+
+#: inc/acf-fields.php
+msgid "PDF file for download"
+msgstr ""
+
+#: inc/acf-fields.php
+msgid "Featured Book"
+msgstr ""
+
+#: inc/acf-fields.php
+msgid "Display this book prominently"
+msgstr ""
+
+#: inc/acf-fields.php
+msgid "Event Details"
+msgstr ""
+
+#: inc/acf-fields.php
+msgid "Event Date"
+msgstr ""
+
+#: inc/acf-fields.php
+msgid "The date of the event"
+msgstr ""
+
+#: inc/acf-fields.php
+msgid "Importance"
+msgstr ""
+
+#: inc/acf-fields.php
+msgid "How significant is this event"
+msgstr ""
+
+#: inc/acf-fields.php
+msgid "High"
+msgstr ""
+
+#: inc/acf-fields.php
+msgid "Medium"
+msgstr ""
+
+#: inc/acf-fields.php
+msgid "Normal"
+msgstr ""
+
+#: inc/acf-fields.php
+msgid "Image Gallery"
+msgstr ""
+
+#: inc/acf-fields.php
+msgid "Images related to this event"
+msgstr ""
+
+#: inc/acf-fields.php
+msgid "Associated Books"
+msgstr ""
+
+#: inc/acf-fields.php
+msgid "Books related to this event"
+msgstr ""
+
+#: inc/acf-fields.php
+msgid "Author Details"
+msgstr ""
+
+#: inc/acf-fields.php
+msgid "Birth Year"
+msgstr ""
+
+#: inc/acf-fields.php
+msgid "Death Year"
+msgstr ""
+
+#: inc/acf-fields.php
+msgid "Short Biography"
+msgstr ""
+
+#: inc/acf-fields.php
+msgid "Photo"
+msgstr ""
+
+#: inc/acf-fields.php
+msgid "Epoch Details"
+msgstr ""
+
+#: inc/acf-fields.php
+msgid "Description"
+msgstr ""
+
+#: inc/acf-fields.php
+msgid "Period Start"
+msgstr ""
+
+#: inc/acf-fields.php
+msgid "Period End"
+msgstr ""
+
+#: inc/acf-fields.php
+msgid "Characteristics"
+msgstr ""
+
+#: inc/acf-fields.php
+msgid "Color"
+msgstr ""
+
+#. Accessibility
+#: various
+msgid "Menu"
+msgstr ""
+
+#: various
+msgid "Close"
+msgstr ""
+
+#: various
+msgid "Open"
+msgstr ""
+
+#: various
+msgid "Expand"
+msgstr ""
+
+#: various
+msgid "Collapse"
+msgstr ""
+
+#: various
+msgid "Show more"
+msgstr ""
+
+#: various
+msgid "Show less"
+msgstr ""
+
+#: various
+msgid "Press Enter to activate"
+msgstr ""
+
+#: various
+msgid "Press Escape to close"
+msgstr ""
+
+#: various
+msgid "Navigate with arrow keys"
+msgstr ""
+
+#. Error messages
+#: inc/ajax-handlers.php
+msgid "Invalid request"
+msgstr ""
+
+#: inc/ajax-handlers.php
+msgid "Security check failed"
+msgstr ""
+
+#: inc/ajax-handlers.php
+msgid "An error occurred. Please try again."
+msgstr ""
