@@ -130,14 +130,24 @@ $spacing-32: 8rem !default;      // 128px
 // LAYOUT
 // =============================================================================
 
-// Container
-$container-max-width: 1280px !default;
-$container-padding: $spacing-4 !default;
-$container-padding-lg: $spacing-8 !default;
+// =============================================================================
+// LAYOUT UPDATE - GUARDIAN STYLE
+// =============================================================================
 
-// Grid
-$grid-columns: 12 !default;
-$grid-gutter: $spacing-6 !default;
+// Container - Mărim considerabil lățimea
+$container-max-width: 1440px; // Era 1280px, prea îngust
+$container-padding: $spacing-6; 
+$container-padding-lg: $spacing-10;
+
+// Grid - Esențial pentru editorial
+$grid-columns: 12;
+$grid-gutter: 20px; // Gutter mai strâns pentru aspect de ziar
+
+// Colors - Actualizare pentru contrast (Guardian folosește mult albastru închis și linii)
+$color-border: #dcdcdc; // Linii fine gri
+$color-primary: #052962; // Guardian Blue
+$color-accent: #c70000; // Editorial Red
+
 
 // Breakpoints
 $breakpoint-xs: 0 !default;

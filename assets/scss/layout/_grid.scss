@@ -1,1 +1,51 @@
 /* _grid - Layout styles */
+
+/* _grid - Layout styles - GUARDIAN STYLE */
+
+.container {
+    width: 100%;
+    max-width: $container-max-width;
+    margin: 0 auto;
+    padding-left: $container-padding;
+    padding-right: $container-padding;
+    
+    // Asigură-te că pe ecrane mari "respiră"
+    @include media-up(xl) {
+        width: 95%;
+    }
+}
+
+// Grid-ul principal de 12 coloane
+.grid-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $grid-gutter;
+    
+    @include media-up(md) {
+        grid-template-columns: repeat(12, 1fr);
+    }
+}
+
+// Utilitare pentru coloane (span)
+@include media-up(md) {
+    .span-3 { grid-column: span 3; }
+    .span-4 { grid-column: span 4; }
+    .span-6 { grid-column: span 6; }
+    .span-8 { grid-column: span 8; }
+    .span-9 { grid-column: span 9; }
+    .span-12 { grid-column: span 12; }
+    
+    // Linii despărțitoare verticale (specific stilului ziar)
+    .border-right {
+        border-right: 1px solid $color-border;
+        padding-right: $grid-gutter;
+    }
+}
+
+// Grid specific pentru cărți (dens)
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: $spacing-8 $spacing-6;
+    align-items: start;
+}

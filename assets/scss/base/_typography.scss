@@ -528,3 +528,14 @@ h6, .h6 {
         color: inherit;
     }
 }
+
+// Adaugă asta în _typography.scss la h1, h2, h3
+.heading-editorial {
+    font-family: $font-family-serif;
+    font-weight: 700;
+    color: $color-black;
+    padding-top: $spacing-2;
+    border-top: 1px solid $color-black; // Linia neagră deasupra titlului
+    display: inline-block;
+    width: 100%;
+}
